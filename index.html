@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Popexsuperstore | Welcome </title>
+    <meta name="description" content="Buy gloceries, food items, electronics and lots more">
+    <meta name="author" content="Oki John, junior web-developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+    <!--Keep footer down and set overflow for the main section to be auto-->
+    <div id="main-container">
+        <div id="body">
+            <!--Background-image-->
+            <div class="image-container">
+                <div class="bg-image">
+
+                    <!--Centralised width set to 60% set position to relative; -->
+                    <section class="content" id="kxw">
+                        <div class="row">
+                            <!--Heading section-->
+                            <div class="col-s-6 col-6 heading-address">
+                                <h2>Popex online<br><span>Superstore</span></h2>
+                                <p><i class="fa  fa-home"></i> 762 Wildrose Lane Detroit, MI 48219. USA</p>
+                                <p> <span><i class="fa fa-phone"></i> Hotlines:</span> +1 313-840-2422, +1 530-923-7474</p>
+                            </div>
+
+                            <!--Login and signup form set it to relative so the forms positive will be set to absolute with top set to zero and left also to zero, this form will be activated will called witha javascript-->
+                            <div class="col-s-6 col-6 login-signup-form">
+                                <div class="btn-form" id="btn-form">
+                                    <button type="button" class="signin-btn">Signin</button>
+                                    <button type="button" class="signup-btn">Signup</button>
+                                </div>
+
+                                <!--login form set to absolute top= 0 and left = 0-->
+                                <div class="form1" id="id01">
+                                    <form action="/action_page.php" method="POST" class="mx1">
+                                        <h2>Signin</h2>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="colum-25">
+                                                <label for="uname"><b>Username:</b></label>
+                                            </div>
+                                            <div class="colum-75">
+                                                <input type="text" name="uname" placeholder="username" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="colum-25">
+                                                <label for="psw"><b>Password:</b></label>
+                                            </div>
+                                            <div class="colum-75">
+                                                <input type="password" name="psw" placeholder="enter password" required>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="remember"> Remember me
+                                            <span> Forgot <a href="#" id="psw">Password?</a></span>
+                                        </div>
+                                        <div class="last-btn-grp" id="last-btn-grp">
+                                            <div class="row">
+                                                <div class="colum-48">
+                                                    <button type="submit" class="submit-btn"> Submit</button>
+                                                </div>
+                                                <div class="colum-48">
+                                                    <button type="button" class="cancel-btn" id="cancel-btn"> Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!--signup form set to absolute top= 0 and left = 0 -->
+                                <div class="form2" id="id02">
+                                    <form action="/action_page.php" method="POST" class="mx2">
+                                        <h2>Create an account </h2>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="colum-25">
+                                                <label for="uname"><b>Username:</b></label>
+                                            </div>
+                                            <div class="colum-75">
+                                                <input type="text" name="uname" placeholder="username" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="colum-25">
+                                                <label for="email"><b>Email:</b></label>
+                                            </div>
+                                            <div class="colum-75">
+                                                <input type="email" name="email" placeholder="email@example.com" required>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="colum-25">
+                                                <label for="psw"><b>Password:</b></label>
+                                            </div>
+                                            <div class="colum-75">
+                                                <input type="password" name="psw" placeholder="enter password" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="colum-25">
+                                                <label for="psw-repeat"><b>Repeat Password:</b></label>
+                                            </div>
+                                            <div class="colum-75">
+                                                <input type="password" name="psw-repeat" placeholder="repeat password" required style="margin-top:15px">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox2">
+                                            <input type="checkbox" name="checkbox"> By creating an account you agree to our <span> <a href="#">Privacy policy </a></span>
+                                        </div>
+                                        <div class="last-btn-grp" id="last-btn-grp">
+                                            <div class="row">
+                                                <div class="colum-48">
+                                                    <button type="submit" class="y-btn"> Signup</button>
+                                                </div>
+                                                <div class="colum-48">
+                                                    <button type="button" class="x-btn" id="x-btn"> Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="social-account">
+                                                <p>Or</p>
+                                                <p>Signin with social account</p>
+                                            </div>
+                                            <div class="icon-social">
+                                                <ul>
+                                                    <li><a href="#" class="facebook">Facebook</a></li>
+                                                    <li><a href="#" class="google-plus">Google-plus</a></li>
+                                                    <li><a href="#" class="twitter">Twitter</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+
+
+
+                                </div>
+
+                                <!--Forgot password form-->
+
+                                <div class="form3" id="id03">
+
+                                    <form action="/action_page.php" method="post" class="mx3">
+                                        <h2>Forgot Password?</h2>
+                                        <hr>
+                                        <p>Input you email in the box below, a new password reset link will be sent to the email provided </p>
+
+                                        <div class="row">
+                                            <div class="colum-25">
+                                                <label for="email"><b>Email:</b></label>
+                                            </div>
+                                            <div class="colum-75">
+                                                <input type="email" name="email" placeholder="email@example.com" required>
+                                            </div>
+                                        </div>
+                                        <div class="reset-btn">
+                                            <button class="rtb" id="resetbtn">Send</button>
+                                            <button type="button" class="rtb-cancel" id="tb-btn"> Cancel</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <script>
+        $(document).ready(function() {
+            $(".signin-btn").click(function() {
+                $("#btn-form").hide();
+                $("#id01").slideDown(500);
+            });
+            $("#cancel-btn").click(function() {
+                $("#btn-form").show(1000);
+                $("#id01").slideUp(500);
+            })
+            $(".signup-btn").click(function() {
+                $("#btn-form").hide();
+                $("#id02").slideDown(500);
+            });
+            $("#x-btn").click(function() {
+                $("#id02").slideUp(500);
+                $("#btn-form").show(1000);
+            })
+            $("#psw").click(function() {
+                $("#id03").slideDown(500);
+                $("#id01").hide();
+            });
+            $(".rtb-cancel").click(function() {
+                $("#id01").show(1000);
+                $("#id03").slideUp(500);
+            });
+        });
+    </script>
+</body>
+
+</html>
