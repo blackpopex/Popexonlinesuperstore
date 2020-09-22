@@ -656,6 +656,7 @@ body {
 
 .mx1 input[type="text"]:focus,
 .mx1 input[type="password"]:focus {
+    outline: none;
     border: none;
     border-bottom: 1px solid var(--primary-color);
 }
@@ -753,6 +754,7 @@ body {
 
 .mx2 input[type="text"]:focus,
 .mx2 input[type="password"]:focus {
+    outline: none;
     border: none;
     border-bottom: 1px solid var(--primary-color);
 }
