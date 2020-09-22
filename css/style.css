@@ -1019,6 +1019,13 @@ hr {
     margin: 0;
 }
 
+.mx3 input[type="email"]:focus {
+ outline: none; 
+ border: none; 
+ border-bottom: 1px solid var(--primary-color);
+}
+
+
 hr {
     border: 1px solid var(--primary-color);
 }
